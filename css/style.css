@@ -19,8 +19,6 @@
   animation: spin 10s infinite;
 }
 
-
-
 .triangle>div {
   position: absolute;
   width: 0;
@@ -28,6 +26,7 @@
   border: 150px solid transparent;
   border-top: 0;
   border-bottom: 300px solid rgb(0, 0, 0);
+  transition: transform 3s ease-in-out;
 }
 
 .triangle-front {
@@ -53,4 +52,16 @@
   to {
     transform: rotateY(360deg);
   }
+}
+
+.triangle:hover .triangle-front {
+  transform: rotateX(16.8deg) translatez(100px);
+}
+
+.triangle:hover .triangle-right {
+  transform: rotateY(-60deg) rotateX(-16.8deg) translatez(-100px);
+}
+
+.triangle:hover .triangle-left {
+  transform: rotateY(60deg) rotateX(-16.555deg) translatez(-100px);
 }
