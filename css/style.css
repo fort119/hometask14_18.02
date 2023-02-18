@@ -3,7 +3,9 @@
 }
 
 .wrapper {
-  margin-top: 300px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 200px;
   perspective: 1000px;
   perspective-origin: center;
 }
